@@ -10,7 +10,14 @@ module.exports = {
          .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
          .limit(5)
          .offset((page - 1) * 5)
-         .select(['incidents.*', 'ongs.name', 'ongs.email', 'ongs.whatsapp', 'ongs.city', 'ongs.uf']);
+         .select([
+            'incidents.*',
+            'ongs.name',
+            'ongs.email',
+            'ongs.whatsapp',
+            'ongs.city',
+            'ongs.uf'
+         ]);
 
       response.header('X-Total-Count', count['count(*)']);
 
@@ -39,8 +46,6 @@ module.exports = {
          .where('id', id)
          .select('ong_id')
          .first();
-
-      console.log(incident);
 
       if (incident.ong_id != ong_id) {
          return response.status(401).json({ error: 'Operation not allowed.' });
