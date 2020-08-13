@@ -73,7 +73,7 @@ Wait a moment and an expo screen will open. Open the Expo app at your cellphone 
   <img align="left" alt="Cadastro ONG" src="Prints/BTH-Cadastro-ONG.png" width="40%">
   <img align="right" alt="Cadastro Caso" src="Prints/BTH-Cadastro-Casos.png" width="40%">
   
-  <br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br />
   
   In the mobile version, you will be presented with all the registered cases so far. Looking into details of each one will provide you with all the info needed to understand the situation and, if so desired, contact the responsible NGO.
   
